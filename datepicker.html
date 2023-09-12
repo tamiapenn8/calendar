@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Question</title>
+    <!-- Include the Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+    <h1>Choose a Date:</h1>
+    <input type="text" id="calendar" placeholder="Select a date">
+    
+    <!-- Include the Flatpickr JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    
+    <script>
+        // Initialize Flatpickr
+        flatpickr("#calendar", {
+            dateFormat: "Y-m-d", // Format the date as YYYY-MM-DD
+            enableTime: false,  // Disable time selection
+            maxDate: "today"    // Set the maximum date to today
+        });
+    </script>
+</body>
+</html>
