@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+    <input type="text" id="datepicker" placeholder="Click to select date">
+    
+    <script>
+        flatpickr("#datepicker", {
+            dateFormat: "m/d/Y",
+            maxDate: "today"
+        });
+    </script>
+</body>
+</html>
